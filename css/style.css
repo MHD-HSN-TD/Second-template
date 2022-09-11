@@ -8,6 +8,10 @@
     --sub_color: rgb(19, 15, 15);
 }
 
+hr {
+    opacity: 0.5;
+}
+
 a:hover {
     opacity: 0.8;
 }
@@ -56,7 +60,7 @@ body {
     transition: all 0.5s;
 }
 
-#ll {
+.ll {
     display: block;
     width: 300px;
     height: 1px;
@@ -67,6 +71,10 @@ body {
 
 
 /*  Header  */
+
+.lint-unstyled {
+    display: inline-block;
+}
 
 header {
     padding: 20px 0px;
@@ -98,9 +106,10 @@ header {
     /* to center the items vertical */
 }
 
-ul li {
+
+/* ul li {
     display: inline-block;
-}
+} */
 
 .header-content li a,
 .header-content ul li {
@@ -384,4 +393,118 @@ ul li {
 .discount-dis p {
     line-height: 1.8;
     color: rgb(86, 85, 84);
+}
+
+
+/* sprites */
+
+.sprits {
+    margin: 75px 0 50px 0;
+    display: flex;
+}
+
+.sprit-item {
+    flex: 1;
+    border-right: 1px solid var(--main_color);
+    text-align: center;
+}
+
+.sprit-icon {
+    background-image: url(../images/service-icon.png);
+    height: 55px;
+    background-repeat: no-repeat;
+    transition: all 0.5s;
+}
+
+.sprit-icon-1 {
+    background-position: center 7px;
+    /*  background-position : x y */
+}
+
+.sprit-item:hover .sprit-icon-1 {
+    background-position: center -86px;
+}
+
+.sprit-icon-2 {
+    background-position: center -180px;
+    /*  background-position : x y */
+}
+
+.sprit-item:hover .sprit-icon-2 {
+    background-position: center -270px;
+}
+
+.sprit-icon-3 {
+    background-position: center -366px;
+    /*  background-position : x y */
+}
+
+.sprit-item:hover .sprit-icon-3 {
+    background-position: center -453px;
+}
+
+.sprit-icon-4 {
+    background-position: center -549px;
+    /*  background-position : x y */
+}
+
+.sprit-item:hover .sprit-icon-4 {
+    background-position: center -641px;
+}
+
+.sprit-icon-5 {
+    background-position: center -734px;
+    /*  background-position : x y */
+}
+
+.sprit-item:hover .sprit-icon-5 {
+    background-position: center -828px;
+}
+
+.sprit-item:last-child {
+    border: 0;
+}
+
+.sprit-info h3 {
+    font-size: 17px;
+}
+
+.sprit-info span {
+    color: gray;
+}
+
+
+/* products section */
+
+.products-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.products-list ul {
+    justify-content: center;
+}
+
+.products-list li {
+    margin: 10px 25px;
+}
+
+.products-list li a {
+    color: var(--main_color);
+}
+
+.products-item {
+    margin-right: 10px;
+    background-image: url(../images/chair4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.discount-item-info {
+    color: var(--sub_color);
+}
+
+.product-dis {
+    background-color: antiquewhite;
 }
